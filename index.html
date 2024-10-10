@@ -42,7 +42,6 @@
       .box3 {
         width: 100px;
         height: 100px;
-        background-color: #0f0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -141,6 +140,7 @@
           position: relative;
           top: 10px;
           left: 10px;
+          color: white;
         }
       }
     </style>
@@ -241,6 +241,7 @@
           if (sc) {
             document.getElementById(sk).innerHTML = "X";
             document.getElementById(sk).style.background = "orangered";
+            document.getElementById(sk).style.color = "white";
             sc = false;
             // document.getElementById(sk).style.background = 'rgba(255,255,255,0.6)';
           } else {
@@ -248,7 +249,7 @@
             sc = true;
             document.getElementById(sk).style.background =
               "rgba(255,255,255,0.6)";
-            document.getElementById(sk).style.color = "orangered";
+            document.getElementById(sk).style.color = "black";
           }
         }
         let box1 = document.getElementById("box1").innerHTML;
